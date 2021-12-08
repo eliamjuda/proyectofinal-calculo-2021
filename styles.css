@@ -1,0 +1,134 @@
+/* ---------------------------- Global Atributes ------------------------------------- */
+
+:root{
+    --blackMain: #171515;
+    --whiteMain: #DCD2D2;
+    --box: #53227C;
+    --input: #3A155A;
+}
+
+body{
+    background-color: var(--blackMain);
+    color: var(--whiteMain);
+    overflow-x: hidden;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input{
+    font-family: 'Roboto Mono', monospace;
+    color: var(--whiteMain);
+    border: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;  
+    align-self: center;
+    background-color: #2B2B31;
+    text-align: center;
+    margin: 8px;
+    
+    outline: none;
+}
+
+#input{
+    background-color: var(--input);
+}
+
+.box{
+    background: #1E1E21;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.resBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.res{
+    margin-left: 3px;
+}
+
+.last_box{
+    width: 400px;
+    background-color: var(--box);
+
+}
+
+/* -------------------------------- MAIN --------------------------------------------- */
+
+
+main{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 800px 150px;
+
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    grid-column: 1 / 3; 
+    grid-row: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2{ margin: 0px}
+
+.left_wrapper{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+.info_box{
+    background-color: #1E1E21;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h4{
+    align-self: center;
+}
+
+
+.right_wrapper{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    grid-column: 1 / 3;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}

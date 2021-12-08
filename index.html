@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Proyecto Final | Cálculo</title>
+</head>
+<body>
+    <main>
+        <header>
+
+            <h1>Proyecto final: método de integración por rectángulos</h1>
+            <h3>Cálculo Diferencial e Integral</h3>
+
+        </header>
+
+        
+        <div class="left_wrapper">
+            <div class="box">
+                <p>Cuando <i>n</i> vale 5</p>
+                <input type="text" readonly value="5">
+                <div class="resBox">
+                    <p>Área aprox: 1.7154</p>
+                </div>
+            </div>
+            <div class="box">
+                <p>Cuando <i>n</i> vale 10</p>
+                <input type="text" readonly value="10">
+                <div class="resBox">
+                    <p>Área aprox: 6.3784 </p>
+                </div>
+            </div>
+            <div class="box">
+                <p>Cuando <i>n</i> vale 20</p>
+                <input type="text" readonly value="20">
+                <div class="resBox">
+                    <p>Área aprox: 53.5089</p>
+                </div>
+            </div>
+            <div class="box">
+                <p>Cuando <i>n</i> vale 50</p>
+                <input type="text" readonly value="50">
+                <div class="resBox">
+                    <p>Área aprox: 21988.7995</p>
+                </div>
+            </div>
+            <div class="box">
+                <p>Cuando <i>n</i> vale 100</p>
+                <input type="text" readonly value="100">
+                <div class="resBox" style="text-align: center;">
+                    <p>Área aprox: <br>
+                        484357528.1355 </p>
+                </div>
+            </div>
+            <div class="box">
+                <p>Cuando <i>n</i> vale 1000</p></p>
+                <input type="text" readonly value="1000">
+                <div class="resBox"  style="text-align: center;">
+                    <p>Área aprox: <br> 7.213944514196869e+86 </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_wrapper">
+
+            <div class="info_box">
+                <h4>Info 🐱‍💻</h4>
+                <p>
+                    Del lado izquierdo están los valores administrados y sus respectivos resultados. Como su resultado no cambia,
+                    el input ha sido modificado a <i>readonly</i>, es decir, no permite modificar su valor. <br><br>
+                    En la caja violeta de abajo se le puede introducir cualquier valor <i>n</i> y mostrará el resultado del área aproximada.
+
+
+                </p>
+
+            </div>
+
+            <div class="last_box box">
+                <p>Ingresa un valor</p>
+                <input type="text" id="input">
+                <div class="resBox">
+                    <p>Resultado: </p>
+                    <p class="res" id="res"></p>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <p>Equipo:</p>
+            <p>Castillo Flores Eliam Judá, Gomez Arreola Diego Armando, Luna Moreno Leonardo Alexis, Moreno Sánchez Diana, Segura Lagunas Sergio</p>
+            <p>UNAM FES Aragón - Ingeniería en Computación - Diciembre 2021</p>
+        </footer>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
