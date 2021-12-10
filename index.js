@@ -15,11 +15,21 @@ document.addEventListener("DOMContentLoaded", (e) => {
         }
         areaF = ansT + ansO;
         res.innerText = areaF.toFixed(10);
+        n = 0;
     });
-    input.addEventListener("blur", (e) => {
+
+    function limpiar(e){
+        if (e.keyCode === 13 && !e.shiftKey) {
+            e.preventDefault();
+            alert("hola")
+        }
+    }
+
+    input.addEventListener("keypress", (e) => {
         y = ( 1 / n);
         area = ( y / 2 );
         ansO = y*(Math.E**area);
         ansT = 0; x = 0; ans = 0; areaF = 0; x = 0; 
     });
+
 });
